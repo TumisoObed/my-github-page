@@ -1,81 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Page</title>
+<meta charset="UTF-8">
+<title>TechNova | Affordable Tech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
 
-        header {
-            background-color: #24292e;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+nav {
+    background: #0a2540;
+    padding: 15px;
+    text-align: center;
+}
 
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        img {
-            width: 200px;
-            border-radius: 12px;
-            margin: 20px 0;
-        }
+header {
+    background: linear-gradient(135deg, #0a2540, #1f6feb);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
 
-        a {
-            color: #0366d6;
-            text-decoration: none;
-            font-weight: bold;
-        }
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            color: #666;
-            font-size: 14px;
-        }
-    </style>
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>Hosted using GitHub Pages</p>
-    </header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="compare.html">Compare Prices</a>
+    <a href="login.html">Login</a>
+    <a href="settings.html">Settings</a>
+</nav>
 
-    <main>
-        <p>This is a simple and clean website created using HTML and GitHub Pages.</p>
+<header>
+    <h1>TechNova</h1>
+    <p>Your one-stop shop for affordable tech</p>
+</header>
 
-        <img src="https://placekitten.com/300/300" alt="Cute kitten">
+<main>
+    <h2>Featured Products</h2>
 
-        <p>
-            Visit <a href="https://github.com" target="_blank">GitHub</a>
-            to learn more about coding.
-        </p>
-    </main>
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Phone">
+            <h3>Smartphones</h3>
+            <p>Latest phones at the best prices.</p>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Adrian Hall</p>
-    </footer>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+            <h3>Laptops</h3>
+            <p>Powerful laptops for work and gaming.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="Headphones">
+            <h3>Accessories</h3>
+            <p>Headphones, keyboards and more.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 TechNova
+</footer>
 
 </body>
 </html>
